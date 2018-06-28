@@ -1,0 +1,28 @@
+{
+  "name": "eat-da-burger-using-sequelize",
+  "version": "1.0.0",
+  "description": "This is a single page webapp used to track the burgers you want to eat . It uses Handlebars to build semantic templates, and MySQL as the database with Sequelize.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xhrsteven/Eat-Da-Burger-Using-Sequelize.git"
+  },
+  "author": "Steven",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xhrsteven/Eat-Da-Burger-Using-Sequelize/issues"
+  },
+  "homepage": "https://github.com/xhrsteven/Eat-Da-Burger-Using-Sequelize#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "method-override": "^2.3.10",
+    "mysql2": "^1.5.3",
+    "sequelize": "^4.38.0"
+  }
+}
