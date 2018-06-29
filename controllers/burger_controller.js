@@ -43,7 +43,7 @@ route.put('/burgers/update', function(req, res){
         }else{
             console.log('create new customer');
             db.Customer.create({
-                cuustomer_name: req.body.eatenBy;
+                cuustomer_name: req.body.eatenBy
             })
             .then(function(data){
                 devour(data.dataValues.id);
