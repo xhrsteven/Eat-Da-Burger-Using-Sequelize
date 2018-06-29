@@ -11,10 +11,13 @@ app.use(bodyPaser.json());
 app.use(bodyPaser.urlencoded({extended: true}));
 app.use(method('_method'));
 
-app.engine('handlerbars', exphbs({defaultLayout: 'main'}));
+app.use(express.static( "public"));
+
+app.engine('handlebars', exphbs({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
 
-require('./controllers/burger_controller.js');
+var route = require('./controllers/burger_controller.js');
+app.use(route);
 
 db.sequelize.sync().then(function(){
     app.listen(PORT, function(){

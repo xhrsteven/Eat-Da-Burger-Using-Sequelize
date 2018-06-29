@@ -35,7 +35,7 @@ route.post('/burgers/create', function(req, res){
 route.put('/burgers/update', function(req, res){
     var customerName = req.body.eatenBy;
     db.Customer.findAll({
-        where:{cuustomer_name: customerName}
+        where:{customer_name: customerName}
     })
     .then(function(data){
         if(data.length > 0){
